@@ -26,7 +26,7 @@
 
     h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 3em;
+      font-size: 2em;
       animation: typing 4s steps(30) 1;
       white-space: nowrap;
       overflow: hidden;
@@ -86,16 +86,17 @@
   </style>
 </head>
 <body>
+  
+    <!-- Tombol untuk play musik -->
+    <button onclick="document.getElementById('musik').play()">Putar Musik 🎵</button>
 
-  <!-- Musik autoplay dari file lokal -->
-  <audio autoplay loop>
-    <source src="Happy.mp3" type="audio/mpeg">
-    Browser kamu tidak mendukung pemutar audio.
-  </audio>
-
+    <!-- Audio manual -->
+    <audio id="Happy" loop>
+      <source src="Happy.mp3" type="audio/mpeg">
+    </audio>
+  
   <div class="container">
-    <h1>Happy Birthday 
-      Olpinn 💖</h1>
+    <h1>Happy Birthday Olpinn 💖</h1>
     <img src="cat.jpg" alt="cat">
     <p>
       Selamat ulang tahun, gantenggg... Olpinn! 
